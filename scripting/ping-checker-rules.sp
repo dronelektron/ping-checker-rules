@@ -2,8 +2,12 @@
 
 #include "ping-checker/api"
 
+#include "ping-checker-rules/vip-list"
+
 #include "modules/console-variable.sp"
+#include "modules/storage.sp"
 #include "modules/use-case.sp"
+#include "modules/vip-list.sp"
 
 public Plugin myinfo = {
     name = "Ping checker rules",
@@ -15,7 +19,13 @@ public Plugin myinfo = {
 
 public void OnPluginStart() {
     Variable_Create();
+    Storage_BuildPath();
+    VipList_Create();
     AutoExecConfig(_, "ping-checker-rules");
+}
+
+public void OnMapStart() {
+    Storage_LoadVips();
 }
 
 public Action PingChecker_OnClient(int client) {
