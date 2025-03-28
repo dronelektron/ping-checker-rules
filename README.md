@@ -9,6 +9,7 @@ Allows you to ignore admins and VIP players
 ### Requirements
 
 * [SourceMod](https://www.sourcemod.net) 1.11 or later
+* [ping-checker](https://github.com/dronelektron/ping-checker)
 
 ### Installation
 
