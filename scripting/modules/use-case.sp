@@ -23,3 +23,8 @@ static bool IsVip(int client) {
 
     return VipList_Exists(steam);
 }
+
+void UseCase_LoadVips(int client) {
+    Storage_LoadVips();
+    Message_VipsLoaded(client);
+}

@@ -2,9 +2,12 @@
 
 #include "ping-checker/api"
 
+#include "ping-checker-rules/message"
 #include "ping-checker-rules/vip-list"
 
+#include "modules/console-command.sp"
 #include "modules/console-variable.sp"
+#include "modules/message.sp"
 #include "modules/storage.sp"
 #include "modules/use-case.sp"
 #include "modules/vip-list.sp"
@@ -18,9 +21,11 @@ public Plugin myinfo = {
 };
 
 public void OnPluginStart() {
+    Command_Create();
     Variable_Create();
     Storage_BuildPath();
     VipList_Create();
+    LoadTranslations("ping-checker-rules.phrases");
     AutoExecConfig(_, "ping-checker-rules");
 }
 

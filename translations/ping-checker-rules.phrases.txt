@@ -1,0 +1,7 @@
+"Phrases"
+{
+    "Vips loaded"
+    {
+        "en"    "The list of VIP players has been loaded"
+    }
+}
