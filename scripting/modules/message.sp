@@ -6,6 +6,10 @@ void Message_RemoveVipUsage(int client) {
     ReplyToCommand(client, "%s%s", PREFIX, "Usage: sm_pingchecker_vip_remove <steamid3>");
 }
 
+void Message_InvalidSteamFormat(int client) {
+    ReplyToCommand(client, "%s%t", PREFIX, "Invalid steam format");
+}
+
 void Message_VipAlreadyExists(int client, const char[] steam) {
     ReplyToCommand(client, "%s%t", PREFIX, "Vip already exists", steam);
 }

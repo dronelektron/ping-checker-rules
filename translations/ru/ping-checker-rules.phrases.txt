@@ -1,5 +1,10 @@
 "Phrases"
 {
+    "Invalid steam format"
+    {
+        "ru"    "Неправильный формат SteamID3, пример [U:1:123456]"
+    }
+
     "Vip already exists"
     {
         "ru"    "Игрок {1} уже есть в списке"

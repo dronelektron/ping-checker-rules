@@ -1,5 +1,10 @@
 "Phrases"
 {
+    "Invalid steam format"
+    {
+        "en"    "Invalid SteamID3 format, example [U:1:123456]"
+    }
+
     "Vip already exists"
     {
         "#format"   "{1:s}"

@@ -25,6 +25,12 @@ static bool IsVip(int client) {
 }
 
 void UseCase_AddVip(int client, const char[] steam) {
+    if (Regex_IsBadSteam(steam)) {
+        Message_InvalidSteamFormat(client);
+
+        return;
+    }
+
     if (VipList_Exists(steam)) {
         Message_VipAlreadyExists(client, steam);
 
@@ -36,6 +42,12 @@ void UseCase_AddVip(int client, const char[] steam) {
 }
 
 void UseCase_RemoveVip(int client, const char[] steam) {
+    if (Regex_IsBadSteam(steam)) {
+        Message_InvalidSteamFormat(client);
+
+        return;
+    }
+
     if (!VipList_Exists(steam)) {
         Message_VipNotFound(client, steam);
 

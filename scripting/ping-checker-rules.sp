@@ -1,4 +1,5 @@
 #include <sourcemod>
+#include <regex>
 
 #include "ping-checker/api"
 
@@ -8,6 +9,7 @@
 #include "modules/console-command.sp"
 #include "modules/console-variable.sp"
 #include "modules/message.sp"
+#include "modules/regex.sp"
 #include "modules/storage.sp"
 #include "modules/use-case.sp"
 #include "modules/vip-list.sp"
@@ -23,6 +25,7 @@ public Plugin myinfo = {
 public void OnPluginStart() {
     Command_Create();
     Variable_Create();
+    Regex_Create();
     Storage_BuildPath();
     Storage_LoadVips();
     VipList_Create();
