@@ -29,9 +29,5 @@ public void OnMapStart() {
 }
 
 public Action PingChecker_OnClient(int client) {
-    if (UseCase_IsClientIgnored(client)) {
-        return Plugin_Stop;
-    }
-
-    return Plugin_Continue;
+    return UseCase_IsClientIgnored(client) ? Plugin_Stop : Plugin_Continue;
 }
