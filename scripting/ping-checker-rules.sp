@@ -24,13 +24,10 @@ public void OnPluginStart() {
     Command_Create();
     Variable_Create();
     Storage_BuildPath();
+    Storage_LoadVips();
     VipList_Create();
     LoadTranslations("ping-checker-rules.phrases");
     AutoExecConfig(_, "ping-checker-rules");
-}
-
-public void OnMapStart() {
-    Storage_LoadVips();
 }
 
 public Action PingChecker_OnClient(int client) {

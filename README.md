@@ -18,17 +18,12 @@ Allows you to ignore admins and VIP players
 
 ### Console Commands
 
+* sm_pingchecker_vip_add &lt;steamid3&gt; - Add SteamID3 to the list
+* sm_pingchecker_vip_remove &lt;steamid3&gt; - Remove SteamID3 from the list
+* sm_pingchecker_vips_save - Save VIP players to the file
 * sm_pingchecker_vips_load - Load VIP players from the file
 
 ### Console Variables
 
 * sm_pingchecker_ignore_admins - Ignore admins (yes - 1, no - 0) [default: "1"]
 * sm_pingchecker_ignore_vips - Ignore VIP players (yes - 1, no - 0) [default: "1"]
-
-### VIP players
-
-To mark a player as a VIP, add his `SteamID3` on a separate line in the file:
-
-```txt
-addons/sourcemod/configs/ping-checker-rules-vips.txt
-```
