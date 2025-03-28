@@ -1,0 +1,41 @@
+"Phrases"
+{
+    "Invalid steam format"
+    {
+        "en"    "Invalid SteamID3 format, example [U:1:123456]"
+    }
+
+    "Vip already exists"
+    {
+        "#format"   "{1:s}"
+        "en"    "Player {1} is already on the list"
+    }
+
+    "Vip added"
+    {
+        "#format"   "{1:s}"
+        "en"    "Player {1} has been added to the list"
+    }
+
+    "Vip not found"
+    {
+        "#format"   "{1:s}"
+        "en"    "Player {1} is not found"
+    }
+
+    "Vip removed"
+    {
+        "#format"   "{1:s}"
+        "en"    "Player {1} has been removed from the list"
+    }
+
+    "Vips saved"
+    {
+        "en"    "The list of VIP players has been saved"
+    }
+
+    "Vips loaded"
+    {
+        "en"    "The list of VIP players has been loaded"
+    }
+}
