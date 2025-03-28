@@ -26,9 +26,9 @@ public void OnPluginStart() {
     Command_Create();
     Variable_Create();
     Regex_Create();
+    VipList_Create();
     Storage_BuildPath();
     Storage_LoadVips();
-    VipList_Create();
     LoadTranslations("ping-checker-rules.phrases");
     AutoExecConfig(_, "ping-checker-rules");
 }
