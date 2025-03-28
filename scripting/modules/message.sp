@@ -33,3 +33,7 @@ void Message_VipsLoaded(int client) {
     ShowActivity2(client, PREFIX, "%t", "Vips loaded");
     LogMessage("\"%L\" loaded the VIP players", client);
 }
+
+void Message_UnableToOpenConfig(const char[] path) {
+    LogError("Unable to open the '%s' config file", path);
+}

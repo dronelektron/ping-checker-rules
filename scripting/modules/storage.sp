@@ -14,7 +14,7 @@ void Storage_SaveVips() {
     File file = OpenFile(g_configPath, "w");
 
     if (file == null) {
-        LogError("Unable to open the '%s' config file", g_configPath);
+        Message_UnableToOpenConfig(g_configPath);
 
         return;
     }
@@ -40,7 +40,7 @@ void Storage_LoadVips() {
     File file = OpenFile(g_configPath, "r");
 
     if (file == null) {
-        LogError("Unable to open the '%s' config file", g_configPath);
+        Message_UnableToOpenConfig(g_configPath);
 
         return;
     }
